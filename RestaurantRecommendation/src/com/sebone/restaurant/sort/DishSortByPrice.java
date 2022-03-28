@@ -1,5 +1,5 @@
 package com.sebone.restaurant.sort;
-import com.sebone.restaurant.data.DishResponse;
+import com.sebone.restaurant.DO.DishResponse;
 /*
 * class name: DishSortByPrice
 * objective:this class is created for sort dish details by price

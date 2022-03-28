@@ -2,7 +2,7 @@ package com.sebone.restaurant.interfaces;
 
 import java.util.ArrayList;
 
-import com.sebone.restaurant.data.RestaurantResponse;
+import com.sebone.restaurant.DO.RestaurantResponse;
 /*
 *interface name: RestaurantInfo
 * objective:this inteface is created for Restaurant details 

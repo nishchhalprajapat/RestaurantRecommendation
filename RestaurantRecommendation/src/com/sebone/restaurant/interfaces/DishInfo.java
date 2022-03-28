@@ -1,7 +1,8 @@
 package com.sebone.restaurant.interfaces;
 import java.util.ArrayList;
-import com.sebone.restaurant.data.DishResponse;
-import com.sebone.restaurant.data.RestaurantResponse;
+
+import com.sebone.restaurant.DO.DishResponse;
+import com.sebone.restaurant.DO.RestaurantResponse;
 /*
 *interface name: DishInfo
 * objective:this inteface is created for Dish details 

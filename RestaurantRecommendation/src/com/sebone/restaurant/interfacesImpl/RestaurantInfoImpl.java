@@ -1,6 +1,7 @@
 package com.sebone.restaurant.interfacesImpl;
 import java.util.ArrayList;
-import com.sebone.restaurant.data.RestaurantResponse;
+
+import com.sebone.restaurant.DO.RestaurantResponse;
 import com.sebone.restaurant.interfaces.RestaurantInfo;
 /*
 *class name: RestaurantInfoImpl

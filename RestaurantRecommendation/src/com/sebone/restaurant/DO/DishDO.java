@@ -1,5 +1,7 @@
-package com.sebone.restaurant.data;
+package com.sebone.restaurant.DO;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Date;
 
 /*
@@ -8,7 +10,8 @@ import java.util.Date;
 * author:Nishchhal Prajapati 
 * Date 24/03/2022
 */
-public class DishData {
+public class DishDO {
+	int Restaurants_id = 0;
 	int dishId;
 	String dishName;
 	int dishPrice;
@@ -16,9 +19,46 @@ public class DishData {
 	String dishDescription;
 	String dishType;
 	String dishStatus;
-	Date dishTime;
+	String dishTime;
 	Date dishPreparationTime;
-	
+	Date dishCreateAt;
+	Date dishModifiedAt;
+	/**
+	 * @return the dishCreateAt
+	 */
+	public Date getDishCreateAt() {
+		return dishCreateAt;
+	}
+	/**
+	 * @param dishCreateAt the dishCreateAt to set
+	 */
+	public void setDishCreateAt(Date dishCreateAt) {
+		this.dishCreateAt = dishCreateAt;
+	}
+	/**
+	 * @return the dishModifiedAt
+	 */
+	public Date getDishModifiedAt() {
+		return dishModifiedAt;
+	}
+	/**
+	 * @param dishModifiedAt the dishModifiedAt to set
+	 */
+	public void setDishModifiedAt(Date dishModifiedAt) {
+		this.dishModifiedAt = dishModifiedAt;
+	}
+	/**
+	 * @return the restaurants_id
+	 */
+	public int getRestaurants_id() {
+		return Restaurants_id;
+	}
+	/**
+	 * @param restaurants_id the restaurants_id to set
+	 */
+	public void setRestaurants_id(int restaurants_id) {
+		Restaurants_id = restaurants_id;
+	}
 	/**
 	 * @return the dishId
 	 */
@@ -106,13 +146,13 @@ public class DishData {
 	/**
 	 * @return the dishTime
 	 */
-	public Date getDishTime() {
+	public String getDishTime() {
 		return dishTime;
 	}
 	/**
 	 * @param dishTime the dishTime to set
 	 */
-	public void setDishTime(Date dishTime) {
+	public void setDishTime(String dishTime) {
 		this.dishTime = dishTime;
 	}
 	/**

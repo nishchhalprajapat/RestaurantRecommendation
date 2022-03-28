@@ -1,5 +1,5 @@
 package com.sebone.restaurant.sort;
-import com.sebone.restaurant.data.RestaurantResponse;
+import com.sebone.restaurant.DO.RestaurantResponse;
 /*
 * class name: RestaurantSortByAveragePrice
 * objective:this class is created for sort Restaurant through average price

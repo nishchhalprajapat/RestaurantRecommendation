@@ -1,5 +1,9 @@
 package com.sebone.restaurant.data;
 import java.util.ArrayList;
+
+import com.sebone.restaurant.DO.OfferDO;
+import com.sebone.restaurant.DO.RattingDO;
+import com.sebone.restaurant.DO.RestaurantDO;
 /*
 *class name: RestaurantDetails
 * objective:this class is created for get and set restaurant offer ratting data 
@@ -7,45 +11,45 @@ import java.util.ArrayList;
 * Date 24/03/2022
 */
 public class RestaurantDetails {
-	OfferData offerData=new OfferData();
-	RattingData rattingData=new RattingData();
-	RestaurantData restaurantData=new RestaurantData();
-	ArrayList<OfferData> offerDataList=new ArrayList<>();
-	ArrayList<RattingData> rattingDataList=new ArrayList<>();
+	OfferDO offerData=new OfferDO();
+	RattingDO rattingData=new RattingDO();
+	RestaurantDO restaurantData=new RestaurantDO();
+	ArrayList<OfferDO> offerDataList=new ArrayList<>();
+	ArrayList<RattingDO> rattingDataList=new ArrayList<>();
 	/**
 	 * @return the restaurantData
 	 */
-	public RestaurantData getRestaurantData() {
+	public RestaurantDO getRestaurantData() {
 		return restaurantData;
 	}
 	/**
 	 * @param restaurantData the restaurantData to set
 	 */
-	public void setRestaurantData(RestaurantData restaurantData) {
+	public void setRestaurantData(RestaurantDO restaurantData) {
 		this.restaurantData = restaurantData;
 	}
 	/**
 	 * @return the offerDataList
 	 */
-	public ArrayList<OfferData> getOfferDataList() {
+	public ArrayList<OfferDO> getOfferDataList() {
 		return offerDataList;
 	}
 	/**
 	 * @param offerDataList the offerDataList to set
 	 */
-	public void setOfferDataList(ArrayList<OfferData> offerDataList) {
+	public void setOfferDataList(ArrayList<OfferDO> offerDataList) {
 		this.offerDataList = offerDataList;
 	}
 	/**
 	 * @return the rattingDataList
 	 */
-	public ArrayList<RattingData> getRattingDataList() {
+	public ArrayList<RattingDO> getRattingDataList() {
 		return rattingDataList;
 	}
 	/**
 	 * @param rattingDataList the rattingDataList to set
 	 */
-	public void setRattingDataList(ArrayList<RattingData> rattingDataList) {
+	public void setRattingDataList(ArrayList<RattingDO> rattingDataList) {
 		this.rattingDataList = rattingDataList;
 	}
 }

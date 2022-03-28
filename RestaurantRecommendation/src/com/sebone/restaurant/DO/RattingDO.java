@@ -1,4 +1,4 @@
-package com.sebone.restaurant.data;
+package com.sebone.restaurant.DO;
 import java.util.Date;
 
 /*
@@ -7,7 +7,7 @@ import java.util.Date;
 * author:Nishchhal Prajapati 
 * Date 24/03/2022
 */
-public class RattingData {
+public class RattingDO {
 	private int rattingId;
 	private int rattingStar;
 	private String rattingDescription;

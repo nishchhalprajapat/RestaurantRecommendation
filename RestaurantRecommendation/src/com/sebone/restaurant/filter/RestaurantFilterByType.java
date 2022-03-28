@@ -1,6 +1,6 @@
 package com.sebone.restaurant.filter;
-import com.sebone.restaurant.data.DishResponse;
-import com.sebone.restaurant.data.RestaurantResponse;
+import com.sebone.restaurant.DO.DishResponse;
+import com.sebone.restaurant.DO.RestaurantResponse;
 /*
 *class name: RestaurantFilterByType
 * objective:this class is created for filter Restaurant By Type(Veg or NonVeg) and return list of filter Restaurant 

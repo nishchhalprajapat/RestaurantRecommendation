@@ -1,5 +1,7 @@
 package com.sebone.restaurant.data;
 
+import com.sebone.restaurant.DO.DishDO;
+
 /*
 *class name: DishDetails
 * objective:this class is created for get and set dish data and restaurant details data 
@@ -7,18 +9,18 @@ package com.sebone.restaurant.data;
 * Date 24/03/2022
 */
 public class DishDetails {
-	DishData dishData=new DishData();
+	DishDO dishData=new DishDO();
 	RestaurantDetails restaurantDetails=new RestaurantDetails();
 	/**
 	 * @return the dishData
 	 */
-	public DishData getDishData() {
+	public DishDO getDishData() {
 		return dishData;
 	}
 	/**
 	 * @param dishData the dishData to set
 	 */
-	public void setDishData(DishData dishData) {
+	public void setDishData(DishDO dishData) {
 		this.dishData = dishData;
 	}
 	/**

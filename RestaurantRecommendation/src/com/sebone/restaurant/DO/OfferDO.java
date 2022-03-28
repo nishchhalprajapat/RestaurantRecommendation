@@ -1,4 +1,4 @@
-package com.sebone.restaurant.data;
+package com.sebone.restaurant.DO;
 import java.util.Date;
 /*
 *class name: OfferData
@@ -6,7 +6,7 @@ import java.util.Date;
 * author:Nishchhal Prajapati 
 * Date 24/03/2022
 */
-public class OfferData {
+public class OfferDO {
 	private int offerId;
 	private String offerType;
 	private String offerDescription;

@@ -1,4 +1,5 @@
-package com.sebone.restaurant.data;
+package com.sebone.restaurant.DO;
+import java.time.LocalTime;
 import java.util.*;
 /*
 *class name: RestaurantData
@@ -6,7 +7,7 @@ import java.util.*;
 * author:Nishchhal Prajapati 
 * Date 17/03/2022
 */
-public class RestaurantData {
+public class RestaurantDO {
 	private int restaurantId;
 	private String restaurantName;
 	private String restaurantEmail;
@@ -15,15 +16,40 @@ public class RestaurantData {
 	private String restaurantImage;
 	private String restaurantStatus;
 	private String restaurantDescription;
-//	private String restaurantOffer;
+	private String restaurantOffer;
 	private int restaurantAvgPrice;
 	private Date restaurantOpenTime;
-	private Date restaurantCloseTime;
+	private	Date restaurantCloseTime;
 	private Date restaurantCreateDateTime;
 	private Date restaurantModifiedDateTime;
+	private int restaurantPincode;
+	
 	/**
-	 * @return the restaurantId
+	 * @return the restaurantPincode
 	 */
+	public int getRestaurantPincode() {
+		return restaurantPincode;
+	}
+	/**
+	 * @param restaurantPincode the restaurantPincode to set
+	 */
+	public void setRestaurantPincode(int restaurantPincode) {
+		this.restaurantPincode = restaurantPincode;
+	}
+
+	/**
+	 * @return the restaurantOffer
+	 */
+	public String getRestaurantOffer() {
+		return restaurantOffer;
+	}
+	/**
+	 * @param restaurantOffer the restaurantOffer to set
+	 */
+	public void setRestaurantOffer(String restaurantOffer) {
+		this.restaurantOffer = restaurantOffer;
+	}
+	
 	public int getRestaurantId() {
 		return restaurantId;
 	}
@@ -64,10 +90,10 @@ public class RestaurantData {
 		return restaurantContact;
 	}
 	/**
-	 * @param restaurantContact the restaurantContact to set
+	 * @param string the restaurantContact to set
 	 */
-	public void setRestaurantContact(long restaurantContact) {
-		this.restaurantContact = restaurantContact;
+	public void setRestaurantContact(long string) {
+		this.restaurantContact = string;
 	}
 	/**
 	 * @return the restaurantType
@@ -136,10 +162,10 @@ public class RestaurantData {
 		return restaurantOpenTime;
 	}
 	/**
-	 * @param restaurantOpenTime the restaurantOpenTime to set
+	 * @param string the restaurantOpenTime to set
 	 */
-	public void setRestaurantOpenTime(Date restaurantOpenTime) {
-		this.restaurantOpenTime = restaurantOpenTime;
+	public void setRestaurantOpenTime(Date string) {
+		this.restaurantOpenTime = string;
 	}
 	/**
 	 * @return the restaurantCloseTime
@@ -148,10 +174,10 @@ public class RestaurantData {
 		return restaurantCloseTime;
 	}
 	/**
-	 * @param restaurantCloseTime the restaurantCloseTime to set
+	 * @param string the restaurantCloseTime to set
 	 */
-	public void setRestaurantCloseTime(Date restaurantCloseTime) {
-		this.restaurantCloseTime = restaurantCloseTime;
+	public void setRestaurantCloseTime(Date string) {
+		this.restaurantCloseTime = string;
 	}
 	/**
 	 * @return the restaurantCreateDateTime

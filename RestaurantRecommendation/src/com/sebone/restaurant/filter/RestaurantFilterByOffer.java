@@ -1,6 +1,6 @@
 package com.sebone.restaurant.filter;
 
-import com.sebone.restaurant.data.RestaurantResponse;
+import com.sebone.restaurant.DO.RestaurantResponse;
 /*
 *class name: RestaurantFilterByOffer
 * objective:this class is created for filter Restaurant By Offer and return list of filter Restaurant 

@@ -1,5 +1,5 @@
 package com.sebone.restaurant.interfacesImpl;
-import com.sebone.restaurant.data.DishResponse;
+import com.sebone.restaurant.DO.DishResponse;
 import com.sebone.restaurant.interfaces.DishInfo;
 /*
 *class name: DishInfoImpl

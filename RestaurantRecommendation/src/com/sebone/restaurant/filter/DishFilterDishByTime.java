@@ -1,6 +1,6 @@
 package com.sebone.restaurant.filter;
 
-import com.sebone.restaurant.data.DishResponse;
+import com.sebone.restaurant.DO.DishResponse;
 /*
 *class name: DishFilterDishByTime
 * objective:this class is created for filter Dish By time (Morning,Afternoon,night,all) and return list of filter dishes 
