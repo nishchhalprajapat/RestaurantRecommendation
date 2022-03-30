@@ -77,11 +77,11 @@ public class DishDetailsDAO {
 		}
 		return isSuccess;
 	}
-	public boolean upadateDishDetails(DishDO dishDo) {
+	public boolean upadateDishDetails(DishDO dishDo,int id) {
 		boolean isSuccess=false;
 		try {
 				Connection con=DbConfig.create();
-				String query="update dish_details Set dish_name=?,Dish_price=?,Dish_image=?,Dish_description=?,Dish_type=?,Dish_status=?,Dish_time=?,Restaurants_id=?,dish_created_at=?,dish_modified_at=?,dish_prepration_time=? where dish_id=?";
+				String query="update dish_details Set dish_name=?,Dish_price=?,Dish_image=?,Dish_description=?,Dish_type=?,Dish_status=?,Dish_time=?,Restaurants_id=?,dish_created_at=?,dish_modified_at=?,dish_prepration_time=?,Dish_id=? where dish_id=?";
 				PreparedStatement prepareStatement=con.prepareStatement(query);
 				prepareStatement.setString(1, dishDo.getDishName());
 				prepareStatement.setInt(2, dishDo.getDishPrice());
@@ -95,6 +95,7 @@ public class DishDetailsDAO {
 				prepareStatement.setDate(10, new java.sql.Date(dishDo.getDishModifiedAt().getTime()));
 				prepareStatement.setDate(11,new java.sql.Date(dishDo.getDishPreparationTime().getTime()));
 				prepareStatement.setInt(12, dishDo.getDishId());
+				prepareStatement.setInt(13, id);
 				prepareStatement.executeUpdate();
 				isSuccess=true;
 		}catch(Exception e) {

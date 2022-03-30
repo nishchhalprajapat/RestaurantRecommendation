@@ -1,15 +1,9 @@
 package com.sebone.restaurant.test.dao;
-
-import static org.junit.jupiter.api.Assertions.*;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-
-import org.junit.Before;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import com.sebone.restaurant.DAO.RestaurantDetailsDAO;
 import com.sebone.restaurant.DO.RestaurantDO;
 
@@ -56,11 +50,9 @@ class RestaurantDetailsDAOTest {
 	}
 	@Test
 	void deleteRestaurantsTest() {
-	assertEquals(true, restaurantDetailsDAO.deleteRestaurantDetails(restaurantDo.getRestaurantId()));
-	RestaurantDO result= restaurantDetailsDAO.getRestaurantDetails(restaurantDo.getRestaurantId());
-	String restaurantName=result.getRestaurantName();
-	assertEquals(null, restaurantName);
+		assertEquals(true, restaurantDetailsDAO.deleteRestaurantDetails(restaurantDo.getRestaurantId()));
+		RestaurantDO result= restaurantDetailsDAO.getRestaurantDetails(restaurantDo.getRestaurantId());
+		String restaurantName=result.getRestaurantName();
+		assertEquals(null, restaurantName);
 }
-
-
 }

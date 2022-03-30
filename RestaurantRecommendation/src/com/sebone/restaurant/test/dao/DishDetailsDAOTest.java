@@ -2,16 +2,16 @@
  * 
  */
 package com.sebone.restaurant.test.dao;
-
 import static org.junit.jupiter.api.Assertions.*;
-
 import java.text.SimpleDateFormat;
-
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
+import org.junit.jupiter.api.Order;
 
 import com.sebone.restaurant.DAO.DishDetailsDAO;
 import com.sebone.restaurant.DO.DishDO;
@@ -20,6 +20,8 @@ import com.sebone.restaurant.DO.DishDO;
  * @author Nishchhal Prajapat
  *
  */
+
+@TestMethodOrder(OrderAnnotation.class)
 class DishDetailsDAOTest {
 	DishDetailsDAO dishDetails=new DishDetailsDAO();
 	DishDO dishDO= new DishDO();
@@ -65,22 +67,26 @@ class DishDetailsDAOTest {
 	}
 
 	@Test
+	@Order(1)
 	void createDishDetailsTest() {
 		boolean result=dishDetails.createDishDetails(dishDO);
 		assertEquals(true, result);
 	}
-	@Test
+//	@Test
+	@Order(2)
 	void readDishDetailsTest() {
 		DishDO result=dishDetails.getDishDetails(dishDO.getDishId());
 		assertEquals("Panneer", result.getDishName());
 	}
 	@Test
+	@Order(3)
 	void upadateDishDetailsTest() {
 		dishDO.setDishPrice(22);
-		assertEquals(true, dishDetails.upadateDishDetails(dishDO));
+		assertEquals(true, dishDetails.upadateDishDetails(dishDO,14));
 		assertEquals(22, dishDetails.getDishDetails(dishDO.getDishId()).getDishPrice());
 	}
 	@Test
+	@Order(4)
 	void deleteDishDetailsTest() {
 	assertEquals(true, dishDetails.deleteDishDetails(dishDO.getDishId()));
 	String dishName=dishDetails.getDishDetails(dishDO.getDishId()).getDishName();

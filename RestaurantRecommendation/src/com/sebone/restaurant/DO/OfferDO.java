@@ -13,6 +13,58 @@ public class OfferDO {
 	private Date offerStartDateTime;
 	private Date offerEndDateTime;
 	private String offerStatus;
+	private String offerDiscount;
+	/**
+	 * @return the restaurantId
+	 */
+	public int getRestaurantId() {
+		return restaurantId;
+	}
+	/**
+	 * @param restaurantId the restaurantId to set
+	 */
+	public void setRestaurantId(int restaurantId) {
+		this.restaurantId = restaurantId;
+	}
+	private int restaurantId;
+	/**
+	 * @return the offerCreatedAt
+	 */
+	public Date getOfferCreatedAt() {
+		return offerCreatedAt;
+	}
+	/**
+	 * @param offerCreatedAt the offerCreatedAt to set
+	 */
+	public void setOfferCreatedAt(Date offerCreatedAt) {
+		this.offerCreatedAt = offerCreatedAt;
+	}
+	/**
+	 * @return the offerModifiedAt
+	 */
+	public Date getOfferModifiedAt() {
+		return offerModifiedAt;
+	}
+	/**
+	 * @param offerModifiedAt the offerModifiedAt to set
+	 */
+	public void setOfferModifiedAt(Date offerModifiedAt) {
+		this.offerModifiedAt = offerModifiedAt;
+	}
+	private Date offerCreatedAt;
+	private Date offerModifiedAt;
+	/**
+	 * @return the offerDiscount
+	 */
+	public String getOfferDiscount() {
+		return offerDiscount;
+	}
+	/**
+	 * @param offerDiscount the offerDiscount to set
+	 */
+	public void setOfferDiscount(String offerDiscount) {
+		this.offerDiscount = offerDiscount;
+	}
 	/**
 	 * @return the offerId
 	 */

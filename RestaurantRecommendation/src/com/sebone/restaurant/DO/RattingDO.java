@@ -13,6 +13,45 @@ public class RattingDO {
 	private String rattingDescription;
 	private Date rattingTime;
 	private String rattingUser;
+	private int restaurantId;
+	private Date ratingCreatedAt;
+	private Date ratingModifiedAt;
+	/**
+	 * @return the restaurantId
+	 */
+	public int getRestaurantId() {
+		return restaurantId;
+	}
+	/**
+	 * @param restaurantId the restaurantId to set
+	 */
+	public void setRestaurantId(int restaurantId) {
+		this.restaurantId = restaurantId;
+	}
+	/**
+	 * @return the ratingCreatedAt
+	 */
+	public Date getRatingCreatedAt() {
+		return ratingCreatedAt;
+	}
+	/**
+	 * @param ratingCreatedAt the ratingCreatedAt to set
+	 */
+	public void setRatingCreatedAt(Date ratingCreatedAt) {
+		this.ratingCreatedAt = ratingCreatedAt;
+	}
+	/**
+	 * @return the ratingModifiedAt
+	 */
+	public Date getRatingModifiedAt() {
+		return ratingModifiedAt;
+	}
+	/**
+	 * @param ratingModifiedAt the ratingModifiedAt to set
+	 */
+	public void setRatingModifiedAt(Date ratingModifiedAt) {
+		this.ratingModifiedAt = ratingModifiedAt;
+	}
 	/**
 	 * @return the rattingId
 	 */
